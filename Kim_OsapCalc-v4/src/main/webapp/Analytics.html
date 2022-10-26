@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>EECS 4413</title>
+		<link rel="stylesheet" href="res/mc.css" type="text/css" title="EECS4413" media="screen, print"/>
+	</head>
+	<body>
+		<script>
+			window.onload = function () {
+				var request = new XMLHttpRequest();
+				request.open("GET", '/Kim_OsapCalc-v4/admin');
+				request.onload = () => {
+					if (request.readyState == 4 && request.status == 200) {
+						var target = document.getElementById("maxText");
+						target.innerHTML += request.responseText;
+					}
+				}
+				request.send();
+			}
+		</script>
+		<nav>
+			<a href="">Home</a>
+			<a href="">About</a>
+		</nav>
+		<br>
+		<fieldset style="width:400px; margin: 0px auto;">
+			<legend>Admin-Mary Lo</legend>
+			<form method="POST">
+				<p id="maxText">Maximum Loan Requested - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+				<br>
+				<button type="button" id="refresh" onClick="location.href=location.href">Refresh</button>
+			</form>
+		</fieldset>
+	</body>
+</html>

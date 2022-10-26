@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="res/mc.css" type="text/css" title="EECS4413" media="screen, print"/>
+		<script type="text/javascript" src="scripts/mc.js"></script>
+		<meta charset="ISO-8859-1">
+		<title>EECS4413</title>
+	</head>
+	<body>
+		<nav>
+			<header>Calculator by 4413-2022</header>
+			<a href="">Home</a>
+			<a href="">About</a>
+		</nav>
+		<br>
+		<fieldset>
+			<legend>Calculator</legend>
+			<form action="Osap" method="POST" class="osapForm" onsubmit="return validate();">
+				<label for="principal">Principal<BR/><small>(total loan amount after studies)</small><span id="principal-error">*</span></label>
+				<input type="number" step="0.01" id="principal" name="principal"></input><BR/>
+				<label for="interest">Annual Interest Rate<span id="interest-error">*</span></label>
+				<input type="number" step="0.01" id="interest" name="interest"></input><BR/>
+				<label for="period">Payment Period<BR/><small>(total number of months)</small><span id="period-error">*</span></label>
+				<input type="number" step="0.01" id="period" name="period"></input><BR/>
+				<button type="submit" name="out" value="html">Submit</button>
+				<button name="ajax" value="true" onclick="doSimpleAjax('/Kim_OsapCalc-v4/Osap/Ajax'); return false;">Submit(Ajax)</button>
+			</form>
+			<div id="ajaxTarget"></div>
+		</fieldset>
+		<br><br><br><br>
+		<center><img src="./res/logo.png" width="110" height="20"></center>
+		<br>
+		<footer><aside>York University</aside></footer>
+	</body>
+</html>
