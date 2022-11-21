@@ -7,5 +7,6 @@
 
 
 ### 2. Student Information System using Tomcat/JavaScript/HTML/CSS/JSP/Ajax/Servlet/DerbyDB/REST Api
+### (with default DB schema)
 <img src="https://user-images.githubusercontent.com/82852354/203176285-c6573a67-9c2b-4b9c-9662-971e16ca643e.png" width="500" height="300">
 
