@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="res/mc.css" type="text/css" title="EECS4413" media="screen, print"/>
+		<meta charset="ISO-8859-1">
+		<title>EECS 4413 SIS</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="scripts/mc.js"></script>
+		<nav>
+			<header>Student Information System</header>
+			<a href="">Home</a>
+			<a href="">About</a>
+		</nav>
+		<fieldset>
+			<legend>SIS-v2</legend>
+			<form action="Sis" method="POST" class="sisForm" onsubmit="return validate();">
+				<label for="prefix">Name Prefix:</label>
+				<input type="text" id="prefix" name="prefix"></input><BR/>
+				<label for="minCredit">Minimum Credit Taken:</label>
+				<input type="number" id="minCredit" name="minCredit"></input><BR/>
+				<br>
+				<button type="submit" name="reportAjax" value="ReportAjax" id="report" onclick="reportStudents('/Kim_SIS-v2/Sis?reportAjax=true'); return false;">ReportAjax</button>
+			</form>
+		</fieldset>
+		<br><br>
+		<div id="ajaxTarget"></div>
+		<br><br><br><br>
+		<center><img src="./res/Logo.png" width="100" height="100"></center>
+	</body>
+</html>
