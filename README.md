@@ -12,3 +12,6 @@
 
 ### REST API test (readme.text in Kim_SIS-v2)
 <img src="https://user-images.githubusercontent.com/82852354/203177272-aa7671a8-c8cd-4802-bd96-b69298f5b466.png" width="1000" height="200">
+
+### 3. Ecommerce project (web-store)
+My contribution: DB schema design & diagram, Creating initial default inputs, MySQL local db connection setup, Creating Model(entities) & repository classes, Implementing cart & checkout controller classes, Credit card validation logic, Writing all parts of report including making diagrams.
