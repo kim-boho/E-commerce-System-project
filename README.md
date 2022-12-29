@@ -10,5 +10,5 @@
 ### (with default DB schema)
 <img src="https://user-images.githubusercontent.com/82852354/203176285-c6573a67-9c2b-4b9c-9662-971e16ca643e.png" width="500" height="300">
 
-### REST API test
+### REST API test (readme.text in Kim_SIS-v2)
 <img src="https://user-images.githubusercontent.com/82852354/203177272-aa7671a8-c8cd-4802-bd96-b69298f5b466.png" width="1000" height="200">
